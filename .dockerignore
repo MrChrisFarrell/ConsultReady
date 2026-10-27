@@ -1,0 +1,10 @@
+**/bin
+**/obj
+**/node_modules
+**/wwwroot
+.git
+.data
+.artifacts
+**/TestResults
+**/test-results
+.env*

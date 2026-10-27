@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+src/ConsultReady.Api/wwwroot/
+.data/
+.artifacts/
+TestResults/
+playwright-report/
+test-results/
+.env*
+!.env.example
+*.user
+*.db*
+*.log
+*.tsbuildinfo

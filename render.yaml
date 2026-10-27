@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: consultready
+    runtime: docker
+    plan: starter
+    numInstances: 1
+    healthCheckPath: /health
+    disk:
+      name: consultready-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: ConsultReady__Mode
+        value: Hosted
+      - key: ConsultReady__DataDirectory
+        value: /var/data
+      - key: Meta__Model
+        value: muse-spark-1.3
+      - key: Meta__DailyCallLimit
+        value: 100
+      - key: MODEL_API_KEY
+        sync: false
